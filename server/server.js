@@ -52,7 +52,7 @@ console.log('Server running at http://'+config.host+':'+config.port+'/');
 // On client connection, check game state and connect him
 io.sockets.on('connection', function(socket) {
   // Debug event
-  if( config.debug ) {
+  if (config.debug) {
     // This event will send an event back defined by data's first element
     // Data's second element will be send as data into back event
     socket.on('debug.ask', function(data) {
@@ -106,7 +106,7 @@ function initPlayer(socket) {
   var isPlayer = game.addPlayer(currentPlayer);
 
   // No more free slot
-  if( !isPlayer ) {
+  if(!isPlayer) {
     socket.emit('game.cannot_join')
   }
   // Player will play
@@ -132,7 +132,7 @@ function sendGameInit(socket, player)
 {
   // Send initial map state
   var pillars = [];
-  for(var i = 0; i < game.map.pillars.length; i++) {
+  for (var i = 0; i < game.map.pillars.length; i++) {
     pillar = game.map.pillars[i];
     pillars.push({'x': pillar.x, 'y': pillar.y, 'h': config.Dists.PILLAR_HEIGHT, 'w': config.Dists.PILLAR_WIDTH});
   }
@@ -160,7 +160,7 @@ function sendGameInit(socket, player)
  */
 function sendGameState(socket) {
   // After player connection, handle the
-  switch(game.state)
+  switch (game.state)
   {
     // no more players, must wait
     case config.GameStates.AWAITING_PLAYERS:
