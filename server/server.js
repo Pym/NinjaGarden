@@ -116,7 +116,7 @@ function initPlayer(socket) {
         console.log('Connect player "'+ playerStack[socket.id].character.id +'" (socket "'+ socket.id +'")');
 
         // Player can do actions
-        socket.on('player.action', function(data) { 
+        socket.on('player.action', function(data) {
             game.notifyPlayerAction(currentPlayer, data);
         });
     }
@@ -186,4 +186,3 @@ function sendGameState(socket) {
             break;
     }
 }
-
