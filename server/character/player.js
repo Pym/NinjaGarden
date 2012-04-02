@@ -17,14 +17,14 @@ Player.prototype = {
     var timedDecision;
 
     // stack empty = repeat last movement
-    if(this.character.decisionStack.length == 0) {
+    if (this.character.decisionStack.length == 0) {
       return new Decision(this.character.state, this.character.dir);
     }
 
     var timedDecision = this.character.decisionStack[0];
     timedDecision.duration--;
     // remove finished decision from the stack
-    if(timedDecision.duration <= 0) {
+    if (timedDecision.duration <= 0) {
       this.character.decisionStack.shift();
     }
 
@@ -36,7 +36,7 @@ Player.prototype = {
       'duration' : decision.isEvent() ? Config.Times.NB_FRAME_SEC * Config.Times.STOP_ON_ACTION : 1
     }
 
-    if(decision.isEvent()) {
+    if (decision.isEvent()) {
       newDecisionEntry.decision.state = 0;
       this.character.decisionStack = [
         newDecisionEntry,
