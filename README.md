@@ -1,13 +1,13 @@
-# NinjaGarden
+# Ninja Garden
 
-Projet de la team Ninja pour la GameDevParty 2012
+Projet de la Team Ninja pour la [Game Dev Party 2](http://www.gamedevparty.fr/).
 
 ## Participants
 
-* Pym
-* Pkoin
-* Dimitri
-* Halundra
-* EricD
-* Toff
-* mikaelrandy
+* Pierre-Yves Jamon (Pym)
+* Julien Fusco (Koin)
+* Dimitri Allegoet (dallegoet)
+* Alain Flaus (halundra)
+* Éric Daspet (edas)
+* Christophoe Dolivet (cdolivet)
+* Mikael Randy (mikaelrandy)
