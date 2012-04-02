@@ -1,4 +1,4 @@
-Character = function () {
+Character = function() {
   this.id = Character.counter++;
   this.init();
 }
@@ -36,7 +36,6 @@ Character.prototype = {
   },
   addEvent: function(eventName, eventDatas) {
     this.events.push(eventName);
-
     // TODO: need to be cleared after each export for client drawing
   },
   clearEvents: function() {
@@ -51,7 +50,6 @@ Character.prototype = {
       'decision' : new Decision(Config.States.STUNNED, null, null),
       'duration' : Config.Times.STUN_DURATION * Config.Times.NB_FRAME_SEC
     }];
-
     this.state = Config.States.STUNNED;
   },
   isDead: function() {
