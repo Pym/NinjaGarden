@@ -29,8 +29,8 @@
         }
         setTimeout(function() {
           console.log("onload");
-          var socket = io.connect('http://localhost:1337';
-          ctrl.initSocket( socket );
+          var socket = io.connect('http://localhost:1337');
+          ctrl.initSocket(socket);
         }, 500);
       }
     </script>
