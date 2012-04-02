@@ -24,7 +24,7 @@ this.Keys = {
 
 // Config actions
 this.allowCheat = true;
-this.allowPlayerStop = false; // change to allow user to stop
+this.allowPlayerStop = true; // change to allow user to stop
 this.persistKeys = false;
 this.autoMove = false;
 this.startWithAutoMove = false;
